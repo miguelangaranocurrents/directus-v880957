@@ -373,7 +373,7 @@ const sortFields = computed(() => {
 			<p class="type-label">{{ $t('interfaces.list.edit_fields') }}</p>
 			<Repeater
 				:value="repeaterValue"
-				template="{{ field }} — {{ interface }}"
+				template="{{ field }} — {{ meta.interface }}"
 				:fields="repeaterFields"
 				@input="repeaterValue = $event"
 			/>
